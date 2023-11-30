@@ -10,7 +10,7 @@ export default function Bienvenido() {
   // el código de tu componente acá
   
     return(
-      <div>
+      <div className="structure">
         <h1>Intro React</h1>
         <h3>Mi nombre es: {studentName}</h3>
         {techSkills.map((skill, index) => (
