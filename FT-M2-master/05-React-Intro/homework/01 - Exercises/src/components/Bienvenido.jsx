@@ -11,7 +11,7 @@ export default function Bienvenido() {
   
     return(
       <div>
-        <h1>Puerco Araña</h1>
+        <h1>Intro React</h1>
         <h3>Mi nombre es: {studentName}</h3>
         {techSkills.map((skill, index) => (
           <li key={index}>{skill}</li> 
