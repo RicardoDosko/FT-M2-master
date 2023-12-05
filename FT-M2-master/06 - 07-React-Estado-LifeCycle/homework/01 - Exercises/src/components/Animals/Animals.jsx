@@ -7,6 +7,19 @@ export default class Animals extends React.Component {
   }
 
   render() {
-    return <div></div>
+    const {animals} = this.props
+    return <div>
+              {animals.map((animal, index) => (
+                <div key={index}>
+                  <h5>{animal.name}</h5>
+                  <img
+                    src={animal.image}
+                    alt={animal.name}
+                    width="300px"
+                    />
+                  <span>{animal.specie}</span>
+                </div>
+                ))}
+            </div>
   }
 }
