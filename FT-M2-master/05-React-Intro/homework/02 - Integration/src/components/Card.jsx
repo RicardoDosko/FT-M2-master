@@ -1,23 +1,20 @@
-import React from "react";
+import React from 'react';
 
-
-
-
-export default function Card({characters}) {
-   return (
-      <div>
-         <div className="header">
-            {
-            <><button onClick={onclose}>X</button>
-            <h2>Name: {characters.name}</h2>
-            <h2>Status: {characters.status}</h2>
-            <h2>Species: {characters.species}</h2>
-            <h2>Género: {characters.gender}</h2>
-            <h2>Origen: {characters.origin}</h2>
-            <img src={characters.image} alt={characters.name} /></>
-         }
-         </div>
+export default function Card({ id, name, status, species, gender, origin, image, onClose }) {
+  return (
+    <div>
+      <div className="header">
+        <>
+          <button onClick={onClose}>X</button>
+          <h2>Name: {name}</h2>
+          <h2>Status: {status}</h2>
+          <h2>Species: {species}</h2>
+          <h2>Género: {gender}</h2>
+          <h2>Origen: {origin}</h2>
+          <img src={image} alt={name} />
+        </>
       </div>
-   );
+    </div>
+  );
 }
 
