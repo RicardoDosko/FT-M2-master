@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Card({ id, name, status, species, gender, origin, image, onClose }) {
   return (
-    <div>
+    <div className='cardContainer'>
       <div className="header">
         <>
           <button onClick={onClose}>X</button>

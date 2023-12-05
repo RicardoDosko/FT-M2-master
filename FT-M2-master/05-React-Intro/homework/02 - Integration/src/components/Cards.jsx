@@ -3,7 +3,7 @@ import Card from './Card'; // Importa el componente Card correctamente
 
 export default function Cards({ characters }) {
   return (
-    <div>
+    <div className='cardsContainer'>
       {characters.map((character) => (
         <Card
           key={character.id}
